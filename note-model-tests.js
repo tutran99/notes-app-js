@@ -5,7 +5,7 @@
     if (note.text !== 'My favourite language is JavaScript') {
       throw new Error("Note was not created");
     }
-};
+  };
 
-testNoteIsCreated();
+  testNoteIsCreated();
 })(this);
