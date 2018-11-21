@@ -150,6 +150,7 @@ ul.noteList li .buttons button {
   border: 0px;
   box-shadow: none;
   outline: none;
+  cursor: pointer;
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -175,5 +176,23 @@ ul.noteList li .buttons button svg {
 }
 
 ul.noteList li .buttons button svg .fill {
+  -webkit-appearance: fill 0.2s ease;
+  -moz-appearance: fill 0.2s ease;
+  transition: fill 0.2s ease;
+}
+
+ul.noteList li .buttons button.remove svg .fill {
   fill: #c0cecb;
+}
+
+ul.noteList li .buttons button.remove:hover svg .fill {
+  fill: #e85656;
+}
+
+ul.noteList li .buttons button.edit svg .fill {
+  fill: #25b99a;
+}
+
+ul.noteList li .buttons button.edit:hover svg .fill {
+  fill: rgba(37, 105, 154, 0.233);
 }
